@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    section.form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      flex: 1 1 100%;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #002f5f;
+    }
+
+    @media screen and (max-width: 768px) {
+      .form-group {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>XYZ College Registration Portal</h1>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Student Registration Form</h2>
+      <form action="submit.html" method="post">
+
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select Course --</option>
+            <option>B.Sc</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>BA</option>
+            <option>MBA</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group full">
+          <button type="submit">Register</button>
+        </div>
+        
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
