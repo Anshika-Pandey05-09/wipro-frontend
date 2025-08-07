@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random User Fetcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f0f0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .user-info {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .user-info img {
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .user-info h2 {
+      margin: 10px 0 5px;
+    }
+
+    .user-info p {
+      margin: 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Random User Generator</h1>
+  <button onclick="fetchRandomUser()">Get Random User</button>
+
+  <div class="user-info" id="userInfo" style="display: none;">
+    <img id="userImage" src="" alt="User Picture" width="120" height="120">
+    <h2 id="userName"></h2>
+    <p id="userEmail"></p>
+  </div>
+
+  <script src="script.js"></script>
+    
+  
+
+</body>
+</html>
